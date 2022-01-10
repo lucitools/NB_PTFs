@@ -348,7 +348,7 @@ def writeWaterContent(outputFolder, record, headings, wcArrays):
 
     outCSV = os.path.join(outputFolder, 'WaterContent.csv')
 
-    with open(outCSV, 'wb') as csv_file:
+    with open(outCSV, 'w') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(headings)
 

@@ -26,7 +26,7 @@ def calcBrooksCoreyFXN(pressure, hb_BC, theta_r, theta_s, lambda_BC):
         pressureVal = pressure[i]
 
         # Calculate the WC @ pressure using Brooks-Corey
-        if pressure[i] < hb_BC:
+        if float(pressure[i]) < float(hb_BC):
             # if pressure is less than to hb_BC
             bc_WC = theta_s
             bcArray.append(bc_WC)

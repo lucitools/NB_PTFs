@@ -146,7 +146,7 @@ def function(outputFolder, inputShp, VGOption, VGPressArray, MVGChoice, fcVal, s
         # Write to output CSV
         outCSV = os.path.join(outputFolder, 'WaterContent.csv')
 
-        with open(outCSV, 'wb') as csv_file:
+        with open(outCSV, 'w') as csv_file:
             writer = csv.writer(csv_file)
             writer.writerow(headings)
 
@@ -305,7 +305,7 @@ def function(outputFolder, inputShp, VGOption, VGPressArray, MVGChoice, fcVal, s
                 # Write to output CSV
                 outCSV = os.path.join(outputFolder, 'K_MVG.csv')
 
-                with open(outCSV, 'wb') as csv_file:
+                with open(outCSV, 'w') as csv_file:
                     writer = csv.writer(csv_file)
                     writer.writerow(headings)
 

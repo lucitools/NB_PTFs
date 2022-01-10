@@ -552,7 +552,7 @@ def writeWCCSV(outputFolder, soilName, pressureArray, WCArray, pressureTitle, WC
     outName = str(soilName) + '.csv'
     outCSV = os.path.join(outputFolder, outName)
 
-    with open(outCSV, 'wb') as csv_file:
+    with open(outCSV, 'w') as csv_file:
         writer = csv.writer(csv_file)
         writer.writerow(headings)
 
